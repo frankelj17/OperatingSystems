@@ -1,0 +1,47 @@
+1. What is the difference between a process and a thread
+
+A thread is just a lightweight process, a computer can still 
+only come with one processor, but what happens if you wnat 
+to do more than one task, you cant.  That is where threads 
+come in, you can do two separate tasks with two separate 
+threads. Although it won't be done at the same time, it is 
+still quicker because you have interruptions so they both 
+go one after another.  Processes have their own memory space
+on the computer, but threads hold their memory in each respective
+process.
+
+3. 1. When would you use a process as opposed to a thread
+
+You would use a process when making an application, because
+of all the data and memory space you would need to create one.
+
+3. 2. When would you use a thread as opposed to a process
+
+When you want to move data and do more with data. threads
+have faster communication between other threads as opposed
+to processes.
+
+4. What are some of the issues with threads
+
+If one thread goes down, the rest are vulnerable
+
+5. What are some of the issues with processes
+
+Slower inter-process communication (because
+they can't share memory, so they have to move data
+to a different memory space)
+
+Takes up more memory space
+
+6. Why are green threads better
+
+Because it's scheduled by the user so we can force a green thread
+to work in a place where the kernel usually doesn't allow a thread
+to take place
+
+7. What is the advantage of using Java threads? As opposed to 
+POSIX threads
+
+Java already comes with all the threading libraries so it is 
+easier to write code that will create, amend, and stop threads
+on the machine
